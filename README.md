@@ -1,6 +1,8 @@
 # Team SAA Watercolor Pomology Data Science Project Repository
 
-This repository is a collection of Jupyter notebooks that serve as the ETL process for the SENG 5709 Data Science group project. 
+This repository is a collection of Jupyter notebooks that serve as the ETL process for the SENG 5709 Data Science group project. It was used to scrape, manipulate and format data so it may be passed to ElasticSearch Data Storage via the ElasticSearch API while complying to the an agreed upon data specification between the 2 systems.
+
+![High Level System Overview](https://i.imgur.com/5YqiNif.jpg)
 
 # Installation/Running instructions
 
@@ -91,4 +93,10 @@ You can ensure that the kernel has been installed to your jupyter lab by running
 ```
 
 
+
+## Next Step: Automation
+
+Once optimized, the repository could be completely automated by consolidating the notebooks into a single script mirroring the ETL Process Overview system diagram:
+
+![ETL Process Overview system diagram](https://i.imgur.com/KORxYL7.png)
 
