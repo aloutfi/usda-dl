@@ -1,7 +1,35 @@
-# USDAPOM-IPYNB
+# Team SAA Watercolor Pomology Data Science Project Repository
 
-USDA-IPYNB is a collection of python scripts and notebooks having to do with Scraping and analysis of the USDA Pomological Watercolor Dataset.
+This repository is a collection of Jupyter notebooks that serve as the ETL process for the SENG 5709 Data Science group project. 
 
-# Installation
+# Installation/Running instructions
 
-See https://janakiev.com/blog/jupyter-virtual-envs/ for instructions on how to get the kernel up and running. Once created, run `pip install -r requirements.txt`. This might not work if you are using conda as your package manager.
+This implementation was done in Python3 on iPython notebooks running in a Jupyter environment. Please consult the [Jupyter Lab Documentiaton](https://jupyterlab.readthedocs.io/en/stable/getting_started/installation.html) for instructions on how to install a Jupyter server onto your local machine.
+
+#### Kernel installation
+
+Once the Jupyter server has been installed on your machine, you will need to create a virtual environment driven kernel to act as an interpreter for the project’s code.
+
+#### Virtual Environment Creation
+
+Abridge instructions derived from: https://janakiev.com/blog/jupyter-virtual-envs/
+
+From hereon out, the following instructions assume you are operating within the directory where you cloned this repository.
+
+##### Create a virtual environment 
+
+`python3 -m venv <venvName>`
+
+##### Start the virutal environment 
+
+`source <venName>/bin/activate`
+
+##### Install package-level dependencies
+
+`pip install -r requirements.txt`
+
+Add the virtual environment to Jupyter:
+
+`python3 -m ipykernel install --user --name <venvName> --display-name “display name you want for the venv”`
+
+You can ensure that the kernel has been installed to your jupyter lab by running `jupyter kernelspec list`
