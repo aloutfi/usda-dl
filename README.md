@@ -58,6 +58,7 @@ You can ensure that the kernel has been installed to your jupyter lab by running
 |
 ├── data
 │	├── USA_2019_Fruit_Totals.csv <- Pulled from https://www.ers.usda.gov/data-products/fruit-and-tree-nuts-data/fruit-and-tree-nuts-yearbook-tables
+|
 │  	├── cultivar-pomo-usda.csv <- Output of usda-recognized.ipynb
 |
 │  	├── cultivar-pomo.csv <- Output of cultivar_mapping.ipynb
