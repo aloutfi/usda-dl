@@ -16,7 +16,7 @@ Once the Jupyter server has been installed on your machine, you will need to cre
 
 #### Virtual Environment Creation
 
-Abridge instructions derived from: https://janakiev.com/blog/jupyter-virtual-envs/
+Abridged instructions derived from: https://janakiev.com/blog/jupyter-virtual-envs/
 
 From hereon out, the following instructions assume you are operating within the directory where you cloned this repository.
 
