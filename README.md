@@ -35,3 +35,41 @@ Add the virtual environment to Jupyter:
 `python3 -m ipykernel install --user --name <venvName> --display-name “display name you want for the venv”`
 
 You can ensure that the kernel has been installed to your jupyter lab by running `jupyter kernelspec list`
+
+
+
+##### Please consult the [Jupyter Lab Documentation](https://jupyterlab.readthedocs.io/en/stable/user/interface.html) for instructions on how to navigate the Jupyter Lab interface.
+
+# Project Questions:
+
+![BQs taken from phase 2](https://i.imgur.com/mfPhi8I.png)
+
+# Repository structure overview
+
+```
+
+├── APS_Varieties.ipynb <- Varieties scraped from American Pomological Soceity Registrar
+├── UMN_Apples.ipynb <- Names of UMN Apples Scraped from UMN's website
+├── cultivar_creation.ipynb <- Creation of mapping between cultivar and common name
+├── cultivar_mapping.ipynb <- Used for M1. Mapping of result from cultivar_creation.ipynb to pomo dataset.
+├── data
+│		├── USA_2019_Fruit_Totals.csv <- Pulled from https://www.ers.usda.gov/data-products/fruit-and-tree-nuts-data/fruit-and-tree-nuts-yearbook-tables
+│  	├── cultivar-pomo-usda.csv <- Output of usda-recognized.ipynb
+│  	├── cultivar-pomo.csv <- Output of cultivar_mapping.ipynb
+│  	├── final.csv <- Output of final_df.ipynb
+│  	├── polity_cultivar_pomo_usda.csv <- Output of polity_export_mapping.ipynb
+│  	├── usda.csv <- Retrieved from https://plants.sc.egov.usda.gov/Data/plantlst.txt
+│  	└── usda_pomological.csv <- Output of usda-pomo.ipynb.
+├── dl.py <- Original script that the project was inspired from.
+├── final_df.ipynb <- Final formatting of cultivar-pomo-usda.csv for elasticsearch upload
+├── ingestion_and_upload.ipynb <- Upload to elastic search
+├── is_usda.ipynb <- Preview usda txt file returned
+├── null_value_analysis.ipynb <- Used for E5. Validates elasticsearch query for per column NVA.
+├── polity_export_mapping.ipynb <- Used for H1. Probably the best documented notebook here.
+├── requirements.txt
+├── usda-pomo.ipynb <- dl.py modified into a quick and dirty python notebook to pull pomo dataset metadata.
+└── usda-recognized.ipynb <- Used for M4. Determines USDA recognized via Scientific Name.
+```
+
+
+
