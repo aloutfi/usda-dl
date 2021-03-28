@@ -6,6 +6,8 @@ This repository is a collection of Jupyter notebooks that serve as the ETL proce
 
 This implementation was done in Python3 on iPython notebooks running in a Jupyter environment. Please consult the [Jupyter Lab Documentiaton](https://jupyterlab.readthedocs.io/en/stable/getting_started/installation.html) for instructions on how to install a Jupyter server onto your local machine.
 
+The server can be ran by running `jupyter lab` in your terminal window.
+
 #### Kernel installation
 
 Once the Jupyter server has been installed on your machine, you will need to create a virtual environment driven kernel to act as an interpreter for the project’s code.
