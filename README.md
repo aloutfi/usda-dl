@@ -96,7 +96,7 @@ You can ensure that the kernel has been installed to your jupyter lab by running
 
 ## Next Step: Automation
 
-Once optimized, the repository could be completely automated by consolidating the notebooks into a single script mirroring the ETL Process Overview system diagram:
+Once optimized, the notebooks in this repository could be consolidated into single script that mirrors the ETL Process Overview system diagram:
 
 ![ETL Process Overview system diagram](https://i.imgur.com/KORxYL7.png)
 
